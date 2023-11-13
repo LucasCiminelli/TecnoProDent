@@ -5,6 +5,11 @@
   font-family: "Montserrat", sans-serif;
 }
 
+ul,
+ol {
+  list-style-type: none;
+}
+
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -22,26 +27,65 @@ i {
 }
 
 .logo-nav {
-  width: 140px;
+  width: 180px;
 }
+
+.nav1 {
+  padding: 30px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 .number {
   margin-top: 30px;
 }
 
 .nav2 {
   background-color: #3f98b6;
-  padding-right: 12px;
+  padding-right: 2px;
 }
 
-.nav-link {
+.nav-menu {
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.1px;
+}
+
+.nav-menu li {
+  padding: 1%;
+}
+.nav-menu .nav-item .nav-link {
+  position: relative;
+  color: white;
+  display: inline;
+}
+
+ .nav-link {
   color: white;
   font-size: 15px;
-  padding-right: 40px;
+  padding-right: 10px;
 }
 
-.nav-link:hover {
-  color: #0d3f86;
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.5s;
+  display: inline-block;
 }
+
+.nav-link:hover::after {
+  width: 93%;
+  color: white;
+}
+
 
 .main-img-container {
   width: 100%;
@@ -60,6 +104,7 @@ i {
 
 .cards-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -68,7 +113,6 @@ i {
 .card {
   height: 350px;
   border-radius: 0px;
-  margin: 0px 40px;
   position: relative;
 }
 
@@ -99,6 +143,7 @@ i {
   border-radius: 0px;
   height: 240px;
 }
+
 .card2 {
   background-color: #3f98b6;
   color: white;
@@ -120,8 +165,8 @@ i {
 }
 
 .video {
-  padding-left: 130px;
-  height: 500px;
+  padding: 0%;
+  height: 800px;
 }
 
 .section-video-container h3 {
@@ -144,16 +189,13 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-size: cover;
 }
 
 .quienes-somos-1 {
   display: flex;
   align-items: center;
   margin: 50px 0px;
-}
-
-.quienes-logo {
-  padding-left: 50px;
 }
 
 .quienes-info {
@@ -197,7 +239,7 @@ i {
 .contacto .btn {
   background-color: #3f98b6;
   border: 1px solid #3f98b6;
-  width: 100%;
+  width: 90%;
   height: 40px;
   margin-top: 20px;
   font-weight: bold;
@@ -216,16 +258,20 @@ i {
   align-items: center;
 }
 
-.reseña {
-  width: 300px;
-  height: 100%;
+.reseñas-container2 {
   display: flex;
   justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.reseña {
   background-color: #c4c9c6;
-  flex-direction: column;
   padding: 0px 10px;
   border-radius: 25px;
-  margin: 0px 20px;
+  margin: 10px 20px;
+  height: 100%;
+  width: 300px;
 }
 
 .name-stars {
@@ -260,6 +306,10 @@ footer {
   height: 100%;
 }
 
+.footer-contacto:nth-child(1){
+  padding-top: 30px;
+}
+
 .footer-container i {
   color: white;
 }
@@ -268,5 +318,117 @@ footer {
   width: 140px;
 }
 
-@media (max-width: 925px) {
+@media (max-width: 1199px) {
+  .reseñas-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-menu {
+    padding: 50px;
+    margin: auto;
+    display: inline;
+    text-align: center;
+  }
+
+  .nav-link {
+    color: white;
+    font-size: 15px;
+    padding: 0%;
+  }
+
+  .nav-menu li {
+    padding: 3%;
+  }
+
+  .quienes-somos-1 {
+    display: inline;
+    align-items: center;
+    margin: 50px 0px;
+  }
+  .quienes-somos-2{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 30px;
+  }
+
+  .quienes-logo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10%;
+  }
+
+  .map {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+  }
+
+  .footer-container {
+    display: inline;
+    text-align: center;
+    align-items: center;
+    margin: 40px 0px;
+    padding: 0px 50px;
+    color: white;
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer-container img {
+    width: 200px;
+  }
+
+  .footer-contacto {
+    padding: 2%;
+  }
+
+  .logo-footer {
+    padding: 4%;
+  }
+  .reseñas-container2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .reseña{
+    margin: 10px 0px;
+    width: 100%;
+  }
+  .nav-link:hover::after {
+    width: 100%;
+    color: white;
+  }
+}
+
+@media (max-width: 575px) {
+  .logo-nav {
+    width: 200px;
+    display: inline;
+  }
+
+  .nav1 {
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+    display: block;
+  }
 }

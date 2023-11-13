@@ -19,17 +19,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="shortcut icon" href="./imgs/Group1.png" type="image/x-icon" />
 
     <link rel="stylesheet" href="styles.css" />
     <title>Ortopedia | TecnoProDent</title>
   </head>
+
   <body>
     <header>
-      <nav class="navbar bg-body-tertiary pt-4">
-        <div class="container d-flex align-items-center">
-          <a class="navbar-brand" href="#">
+      <nav>
+        <div class="nav1">
+          <a href="#">
             <img class="logo-nav" src="./imgs/Group2(1).png" alt="Logo-nav" />
           </a>
           <p class="number">
@@ -37,21 +39,10 @@
           </p>
         </div>
       </nav>
-      <nav class="navbar navbar-expand-lg nav2">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto pe-4">
+      <nav class="nav2">
+        <div class="row">
+          <div class="container-fluid">
+            <ul class="nav-menu">
               <li class="nav-item">
                 <a
                   class="nav-link"
@@ -69,7 +60,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link me-5 pe-3" href="index.html#contactanos"
+                <a class="nav-link" href="index.html#contactanos"
                   >Contáctanos</a
                 >
               </li>
@@ -90,7 +81,10 @@
       </div>
       <div class="container py-5 cards-container">
         <div class="row">
-          <div class="col-xs-12 col-md-4 col-lg-4 col-xl-4">
+          <div
+            class="p-5 col-xs-12 col-md-8 col-lg-4 col-xl-4"
+            data-aos="zoom-in"
+          >
             <div class="card card1" style="width: 18rem">
               <div class="card-body">
                 <div class="blue-rectangle"></div>
@@ -110,7 +104,10 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-md-4 col-lg-4 col-xl-4">
+          <div
+            class="p-5 col-xs-12 col-md-8 col-lg-4 col-xl-4"
+            data-aos="zoom-in"
+          >
             <div class="card card2" style="width: 18rem">
               <div class="card-body">
                 <div class="blue-rectangle"></div>
@@ -131,7 +128,10 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-md-4 col-lg-4 col-xl-4">
+          <div
+            class="p-5 col-xs-12 col-md-8 col-lg-4 col-xl-4"
+            data-aos="zoom-in"
+          >
             <div class="card card3" style="width: 18rem">
               <div class="card-body">
                 <div class="blue-rectangle"></div>
@@ -157,17 +157,17 @@
         <div class="row">
           <div class="col-xs-12 col-md-6 col-lg-6 col-xl-6">
             <video
-              class="video"
+              class="video img-fluid"
               src="./video/video-9gjon76m_VU6O4CBd.mp4"
               controls
             ></video>
           </div>
-          <div class="col-xs-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="p-2 col-xs-12 col-md-6 col-lg-6 col-xl-6">
             <h3>
               Así trabajamos en <br />
               <span>TECNOPRODENT</span>
             </h3>
-            <p class="parrafo-video pt-3">
+            <p class="p-1 parrafo-video pt-3">
               En nuestra ortopedia, nos especializamos en análisis biomecánicos
               de la marcha con el objetivo de mejorar el bienestar y la calidad
               de vida de nuestros pacientes. Realizamos evaluaciones detalladas
@@ -187,7 +187,7 @@
           </div>
         </div>
       </div>
-      <div class="container my-5 px-5">
+      <div class="container my-5 px-1">
         <div class="row">
           <div class="col-xs-12 servicio-personalizado">
             <img class="img-fluid" src="./imgs/Group17.jpg" alt="" />
@@ -196,7 +196,7 @@
       </div>
       <div class="container" id="quienesSomos">
         <div class="row">
-          <div class="col-xs-12 col-md-8 col-lg-8 col-xl-8 quienes-somos-1">
+          <div class="col-xl-8 quienes-somos-1">
             <div class="quienes-logo">
               <img src="./imgs/Group1.png" alt="logo" />
             </div>
@@ -205,14 +205,14 @@
               <p>
                 Nosotros somos Sergio Díaz y Alicia Astudillo, propietarios de
                 <br />
-                TecnoProDent, que desde el año 1999 comenzamos siendo un <br />
-                laboratorio de protesis dental y poco a poco, con esfuerzo,
-                <br />dedicación y mucho estudio nos fuimos capacitando y
+                TecnoProDent. Desde el año 1999 comenzamos siendo un <br />
+                laboratorio de protesis dental y, poco a poco, con esfuerzo,
+                <br />dedicación y mucho estudio, nos fuimos capacitando y
                 preparando para ir expandiéndonos hacia la ortopedia.
               </p>
             </div>
           </div>
-          <div class="col-xs-12 col-md-4 col-lg-4 col-xl-4 quienes-somos-2">
+          <div class="col-xl-4 quienes-somos-2">
             <div>
               <img class="img-quienes-somos" src="" alt="" />
               <h5>Sergio Díaz</h5>
@@ -229,8 +229,8 @@
           <div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 ps-5 contacto">
             <h3 class="pb-4">Datos de Contacto</h3>
             <p class="pb-3">
-              Ortopedia TecnoProDent, Av. San Martin 1165, M5539 Las Heras,
-              Mendoza. <br />
+              Ortopedia TecnoProDent, <br />
+              Av. San Martin 1165, M5539 Las Heras, Mendoza. <br />
               Argentina Las Heras (Mendoza). <br />
               Provincia de Mendoza
             </p>
@@ -247,7 +247,7 @@
               </button></a
             >
           </div>
-          <div class="col-xs-12 col-md-6 col-lg-8 col-xl-8 pe-5">
+          <div class="map col-xs-12 col-md-6 col-lg-8 col-xl-8 pe-4">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.662907264333!2d-68.83671692433398!3d-32.854175873631554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e08be1af9197b%3A0x7066a2c2e8311abc!2sORTOPEDIA%20TECNOPRODENT!5e0!3m2!1ses!2sar!4v1699447938458!5m2!1ses!2sar"
               width="100%"
@@ -260,9 +260,9 @@
           </div>
         </div>
       </div>
-      <div class="container reseñas-container my-5">
-        <div class="row">
-          <div class="reseña">
+      <div class="container reseñas-container">
+        <div class="reseñas-container2">
+          <div class="reseña" data-aos="fade-right">
             <div class="name-stars">
               <h6>Ana</h6>
               <p>
@@ -272,17 +272,17 @@
               </p>
             </div>
             <div>
-              <p class="px-2">
-                La Sra. Alicia Astudillo me confecciono unas plantillas,
+              <p class="px-2 p-3">
+                La Sra. Alicia Astudillo me confeccionó unas plantillas,
                 realizandome previamente un estudio muy completo para lograr
                 mejorar mi problema de pies. Recomiendo su profesionalismo ya
-                que todo este tiempo que llevo usandolas el dolor para caminar
+                que todo este tiempo que llevo usándolas el dolor para caminar
                 disminuyó notablemente. La calidad del material, la eficiencia y
                 seriedad para realizarlo lograron aliviar mi problema.
               </p>
             </div>
           </div>
-          <div class="reseña">
+          <div class="reseña" data-aos="fade-bottom">
             <div class="name-stars">
               <h6>Facundo</h6>
               <p>
@@ -292,14 +292,14 @@
               </p>
             </div>
             <div>
-              <p class="px-2">
+              <p class="px-2 p-3">
                 Alicia, quería agradecerte por tu profesionalismo y el excelente
                 trato que recibo durante el tratamiento, muy conforme con el
-                progreso que vengo teniendo y especialmente con tú atención.
+                progreso que vengo teniendo y especialmente con tu atención.
               </p>
             </div>
           </div>
-          <div class="reseña">
+          <div class="reseña" data-aos="fade-left">
             <div class="name-stars">
               <h6>Fernando</h6>
               <p>
@@ -309,10 +309,10 @@
               </p>
             </div>
             <div>
-              <p class="px-2">
+              <p class="px-2 p-3">
                 La atención en la ortopedia ha sido excelente. El equipo de
                 profesionales fue amable y siempre dispuesto a ayudar. Me sentí
-                muy bien atendido y cómodo. Además los precios son muy buenos.
+                muy bien atendido y cómodo. Además, los precios son muy buenos.
               </p>
             </div>
           </div>
@@ -324,13 +324,15 @@
         <div class="row">
           <div class="footer-container">
             <div>
-              <p><i class="bi bi-telephone-fill pe-2"></i> 0261 437-0482</p>
-              <p>
+              <p class="footer-contacto">
+                <i class="bi bi-telephone-fill pe-2"></i> 0261 437-0482
+              </p>
+              <p class="footer-contacto">
                 <i class="bi bi-geo-alt-fill pe-2"></i> Av. San martin 1165,
                 M5539 Las Heras, Mendoza
               </p>
             </div>
-            <div class="div">
+            <div class="logo-footer">
               <a href="#"><img src="./imgs/Group10.png" alt="logo-footer" /></a>
             </div>
           </div>
@@ -342,5 +344,9 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
