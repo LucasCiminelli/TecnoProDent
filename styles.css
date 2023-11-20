@@ -63,14 +63,14 @@ i {
   display: inline;
 }
 
- .nav-link {
+.nav-link {
   color: white;
   font-size: 15px;
   padding-right: 10px;
 }
 
 .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -4px;
@@ -85,7 +85,6 @@ i {
   width: 93%;
   color: white;
 }
-
 
 .main-img-container {
   width: 100%;
@@ -217,15 +216,22 @@ i {
   padding-bottom: 60px;
   padding-right: 40px;
   color: #0d3f86;
+  padding-top: 60px;
 }
 
 .img-quienes-somos {
   background-color: grey;
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-  margin-left: 10px;
+  width: 130px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-right: 10px;
   margin-bottom: 10px;
+}
+
+.img-quienes-somos:hover {
+  scale: 120%;
+  transition: 1.5s ease all;
 }
 
 .quienes-somos-2 h5 {
@@ -306,7 +312,7 @@ footer {
   height: 100%;
 }
 
-.footer-contacto:nth-child(1){
+.footer-contacto:nth-child(1) {
   padding-top: 30px;
 }
 
@@ -363,7 +369,7 @@ footer {
     align-items: center;
     margin: 50px 0px;
   }
-  .quienes-somos-2{
+  .quienes-somos-2 {
     display: flex;
     justify-content: space-around;
     padding: 0px 30px;
@@ -407,9 +413,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
-  .reseña{
+  .reseña {
     margin: 10px 0px;
     width: 100%;
   }
